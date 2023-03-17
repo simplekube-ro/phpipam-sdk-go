@@ -9,10 +9,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/pavel-z1/phpipam-sdk-go/controllers/addresses"
-	"github.com/pavel-z1/phpipam-sdk-go/phpipam"
-	"github.com/pavel-z1/phpipam-sdk-go/phpipam/session"
-	"github.com/pavel-z1/phpipam-sdk-go/testacc"
+	"github.com/simplekube-ro/phpipam-sdk-go/controllers/addresses"
+	"github.com/simplekube-ro/phpipam-sdk-go/phpipam"
+	"github.com/simplekube-ro/phpipam-sdk-go/phpipam/session"
+	"github.com/simplekube-ro/phpipam-sdk-go/testacc"
 )
 
 var testCreateSubnetInput = Subnet{
@@ -534,7 +534,7 @@ func TestCreateSubnet(t *testing.T) {
 	}
 }
 
-func TestCreateFirstFreeSubnet(t *testing.T){
+func TestCreateFirstFreeSubnet(t *testing.T) {
 	ts := httpCreatedTestServer(testCreateFirstFreeSubnetOutputJSON)
 	defer ts.Close()
 	sess := fullSessionConfig()

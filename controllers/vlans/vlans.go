@@ -5,9 +5,9 @@ package vlans
 import (
 	"fmt"
 
-	"github.com/pavel-z1/phpipam-sdk-go/phpipam"
-	"github.com/pavel-z1/phpipam-sdk-go/phpipam/client"
-	"github.com/pavel-z1/phpipam-sdk-go/phpipam/session"
+	"github.com/simplekube-ro/phpipam-sdk-go/phpipam"
+	"github.com/simplekube-ro/phpipam-sdk-go/phpipam/client"
+	"github.com/simplekube-ro/phpipam-sdk-go/phpipam/session"
 )
 
 // VLAN represents a PHPIPAM VLAN.
