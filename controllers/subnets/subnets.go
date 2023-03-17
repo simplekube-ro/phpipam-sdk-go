@@ -5,10 +5,10 @@ package subnets
 import (
 	"fmt"
 
-	"github.com/pavel-z1/phpipam-sdk-go/controllers/addresses"
-	"github.com/pavel-z1/phpipam-sdk-go/phpipam"
-	"github.com/pavel-z1/phpipam-sdk-go/phpipam/client"
-	"github.com/pavel-z1/phpipam-sdk-go/phpipam/session"
+	"github.com/simplekube-ro/phpipam-sdk-go/controllers/addresses"
+	"github.com/simplekube-ro/phpipam-sdk-go/phpipam"
+	"github.com/simplekube-ro/phpipam-sdk-go/phpipam/client"
+	"github.com/simplekube-ro/phpipam-sdk-go/phpipam/session"
 )
 
 // Subnet represents a PHPIPAM subnet.
@@ -88,10 +88,10 @@ type Subnet struct {
 	EditDate string `json:"editDate,omitempty"`
 
 	// Gateway IP and ID of Gateway IP
-	Gateway  map[string]interface{} `json:"gateway,omitempty"`
+	Gateway map[string]interface{} `json:"gateway,omitempty"`
 
 	// Gateway IP ID
-	GatewayID  string `json:"gatewayId,omitempty"`
+	GatewayID string `json:"gatewayId,omitempty"`
 
 	// A map[string]interface{} of custom fields to set on the resource. Note
 	// that this functionality requires PHPIPAM 1.3 or higher with the "Nest

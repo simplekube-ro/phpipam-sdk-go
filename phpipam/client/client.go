@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/pavel-z1/phpipam-sdk-go/phpipam"
-	"github.com/pavel-z1/phpipam-sdk-go/phpipam/request"
-	"github.com/pavel-z1/phpipam-sdk-go/phpipam/session"
+	"github.com/simplekube-ro/phpipam-sdk-go/phpipam"
+	"github.com/simplekube-ro/phpipam-sdk-go/phpipam/request"
+	"github.com/simplekube-ro/phpipam-sdk-go/phpipam/session"
 )
 
 // Client encompasses a generic client object that is further extended by
@@ -42,7 +42,7 @@ func loginSession(s *session.Session) error {
 			return err
 		}
 		s.Token = out
-    }
+	}
 	return nil
 }
 
